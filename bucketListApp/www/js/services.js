@@ -3,7 +3,8 @@
  */
 angular.module('bucketList.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
-        var base = "http://localhost:9804";//"https://bucketlistnico.herokuapp.com";
+        //var base = "http://localhost:9804";//"https://bucketlistnico.herokuapp.com";
+        var base = "https://bucketlistnico.herokuapp.com";
         $rootScope.show = function (text) {
             $rootScope.loading = $ionicLoading.show({
                 content: text ? text : 'Loading',
