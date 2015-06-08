@@ -1,20 +1,30 @@
 .margin {
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
+
 .icon-actions {
-    font-size: 23px;
+    font-size: 20px;
 }
+
+
 .checkbox {
     vertical-align: middle;
 }
+
 .actions {
     float: right;
 }
+
 .item-text-wrap {
     overflow: auto;
 }
+
+.ion-edit.icon-actions.margin
+{
+    margin-right: 20px;
+}
 .ion-checkmark-circled.icon-actions.margin
 {
-    margin-right: 35px;
+    margin-right: 20px;
 }

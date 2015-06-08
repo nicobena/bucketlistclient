@@ -3,7 +3,7 @@
  */
 angular.module('bucketList.services', [])
     .factory('API', function ($rootScope, $http, $ionicLoading, $window) {
-        var base = "https://bucketlistnico.herokuapp.com";
+        var base = "http://localhost:9804";//"https://bucketlistnico.herokuapp.com";
         $rootScope.show = function (text) {
             $rootScope.loading = $ionicLoading.show({
                 content: text ? text : 'Loading',
@@ -73,7 +73,7 @@ angular.module('bucketList.services', [])
                     }
                 });
             },
-            putItem: function (id, form, email) {
+            editItem: function (id, form, email) {
                 return $http.put(base+'/api/v1/bucketList/data/item/' + id, form, {
                     method: 'PUT',
                     params: {
