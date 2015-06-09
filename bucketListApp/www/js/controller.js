@@ -127,7 +127,7 @@ angular.module('bucketList.controllers', ['bucketList.services'])
 
         $scope.markCompleted = function (id) {
             $rootScope.show("Please wait... Updating List");
-            API.putItem(id, {
+            API.editItem(id, {
                 isCompleted: true
             }, $rootScope.getToken())
                 .success(function (data, status, headers, config) {
